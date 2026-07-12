@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: rgb(255, 231, 14);
+    text-align: center;
+    font: normal 20pt Arial;
+}
+
+section{
+    background: white; /* Cria um quadrado */
+    border-radius: 10px; /* Aredonda a borda de uma quadrado */
+    padding: 15px;
+    width: 500px;
+    height: 300x; /* Aumenta a largura do quadrado*/
+    margin: auto; /* Coloca o quadrado auto no meio */
+    box-shadow: 5px 5px 10px rgb(0, 0, 0); /* Cria uma sombra */
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+
+input#txti{
+    width: 150px;
+    height: 22px;
+    border-radius: 5px;
+    font: normal 12pt Arial;
+} 
+input#txtf{
+    width: 150px;
+    height: 22px;
+    border-radius: 5px;
+    font: normal 12pt Arial;
+}
+input#txtp{
+    width: 150px;
+    height: 22px;
+    border-radius: 5px;
+    font: normal 12pt Arial;
+}
+
+input#botao{
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    font: normal 15pt Arial;
+    color: aliceblue;
+    background-color: green;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+div#ep{
+    padding: 50px;
+}

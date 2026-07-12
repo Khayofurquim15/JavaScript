@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title> 
+    <style>
+        body{
+            color: rgb(0, 132, 255); /* muda a cor das letras */
+            font: normal 20pt  Arial; /* muda a fonte das letras */
+            background-color: rgb(255, 238, 0); /* muda a cor do fundo do site */
+        }
+    </style>
+</head>
+<body>
+    
+  <script>
+     let nome = window.prompt('Qual é seu nome ?') // guarda o seu nome //
+   let idade = window.prompt('Qual a sua idade ?') // guarda o valor digitado //
+   let sexo = window.prompt('Coloque M para masculino e F para feminino!') // guarda a string digitada //
+   let res = idade >= 18 ? 'Você é Maior de idade!' : 'Você é Menor de idade!' // verifica se o valor é mior que 18 //
+   let qualS = sexo == 'm' && 'f' ? 'Você é um Homem' : 'Você é uma Mulher' // verifica se voce colocou m(true) ou f(false) //
+   document.write(`Olá, <strong>${nome}</strong>! O seu nome possui ${nome.length} letras.<br/>`)
+   document.write(`${qualS}<br/>`) // se colocou m é homen se colocou f é mulher // 
+   document.write(`${res}<br/>`) // se for true é maior de idade se for false é menor de idade //
+   document.write(`e seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`) // deixa as letras do seu nome em maiusculo //
+   document.write(`e seu nome em minúsculas é ${nome.toLowerCase()}`) // deixa em minusculo //
+  </script>
+  
+</body>
+</html>

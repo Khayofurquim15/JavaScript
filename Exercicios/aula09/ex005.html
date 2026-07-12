@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(92, 142, 207);
+            color: aliceblue;
+            font: normal 16pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM.</h1>
+    <p>Aqui vai o resultado.</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id = "msg">Clique aqui!</div>
+    <script>
+        let corpo = window.document.body
+        let p1 = window.document.getElementsByTagName('p')[1]
+        /*
+        let d = window.document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+       let d = window.document.querySelector('div#msg')
+       d.style.background = 'green' // Cria uma barra azul ná palavra selecionada //
+      </script>
+</body>
+</html>
+
+
+
+

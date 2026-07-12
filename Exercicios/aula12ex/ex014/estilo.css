@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+    font: normal 22pt Arial;
+    padding: 10px;
+}
+
+section{
+    background: white; /* Cria um quadrado */
+    border-radius: 10px; /* Aredonda a borda de uma quadrado */
+    padding: 15px;
+    width: 500px; /* Aumenta a largura do quadrado*/
+    margin: auto; /* Coloca o quadrado auto no meio */
+    box-shadow: 5px 5px 10px rgb(0, 0, 0); /* Cria uma sombra */
+}
+
+div#msg{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 10px;
+    font: normal 17pt Arial;
+}
+
+div#foto{
+    text-align: center;
+    padding:50px ;
+}
+
+h1#Tnome{
+    font: normal 15pt Arial;
+    padding: 10px;
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}

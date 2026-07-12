@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(107, 107, 241);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: aliceblue;
+    text-align: center;
+}
+
+section{
+    background: white; /* Cria um quadrado */
+    border-radius: 10px; /* Aredonda a borda de uma quadrado */
+    padding: 15px;
+    width: 500px; /* Aumenta a largura do quadrado*/
+    margin: auto; /* Coloca o quadrado auto no meio */
+    box-shadow: 5px 5px 10px rgb(0, 0, 0); /* Cria uma sombra */
+    
+}
+
+div#res{
+    padding: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 380px;
+    margin: auto;
+}
+
+footer{
+    color: aliceblue;
+    text-align: center;
+    font-style: italic;
+}
+input#botao{
+    background-color: green;
+    color: aliceblue;
+    font: normal 15pt Arial;
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.767);
+    border-radius: 5px;
+}
