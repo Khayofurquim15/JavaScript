@@ -9,6 +9,15 @@
         - Pocição atual
         - Array completo
 
+    REDUCE EM ARRAYS (Reduzir a um valor)
+
+    -- Reduz um array inteiro a um unico valor
+    -- Voce tem acesso:
+        - Acumulador
+        - Valor Atual
+        - Pocição Atual
+        - Array completo
+
 */
 
 const produtos =[
@@ -18,6 +27,8 @@ const produtos =[
     { id: 4, nome: 'PlayStation 5', preco: 4690.00, desconto: false, estoque: 9},
     { id: 5, nome: 'Apple Watch', preco: 2490.00, desconto: true, estoque: 18}
 ];
+
+// CRIAR UM NOVO ARRY FORMATANDO A MOEDA E COM DESCONTO APLICADO //
 
 const novosProdutos = produtos.map((produto)=>{
 
@@ -32,5 +43,12 @@ const novosProdutos = produtos.map((produto)=>{
         estoque: produto.estoque
     };
 });
-
 console.log(novosProdutos);
+
+// QUAL SERA O FATURAMENTO, SE VENDERMOS TODO O ESTOQUE //
+
+const totalVendas = produtos.reduce((acumulador, produto)=>{
+
+    return acumulador + (produto.preco * produto.estoque);
+}, 0);
+console.log('O total é: ' + totalVendas.toLocaleString('pt-br', {style:'currency', currency:'BRL'}));
