@@ -11,13 +11,20 @@
 
     REDUCE EM ARRAYS (Reduzir a um valor)
 
-    -- Reduz um array inteiro a um unico valor
+    -- Reduz um array inteiro a um unico valor 
     -- Voce tem acesso:
         - Acumulador
         - Valor Atual
         - Pocição Atual
         - Array completo
 
+    FILTER EM ARRAYS (filtrar o array)
+
+    -- Cria um novo array filtrando os valores desejados
+    -- Possui o acesso a:
+        - Item por Item do array
+        - Posição atual do item
+        - Array completo
 */
 
 const produtos =[
@@ -52,3 +59,10 @@ const totalVendas = produtos.reduce((acumulador, produto)=>{
     return acumulador + (produto.preco * produto.estoque);
 }, 0);
 console.log('O total é: ' + totalVendas.toLocaleString('pt-br', {style:'currency', currency:'BRL'}));
+
+// FILTRAR SOMENTE OS PRODUTOS EM PROMOÇÃO //
+
+const promocao = produtos.filter( (produto) => {
+    return produto.desconto;
+});
+console.log(promocao);
